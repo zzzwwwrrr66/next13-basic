@@ -4,7 +4,7 @@ import { Inter } from 'next/font/google'
 import { cookies } from 'next/headers'
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata  = handleMetaData('post and list');
+export const metadata  = handleMetaData('wooram page');
 
 export default function RootLayout({
   children,
@@ -17,8 +17,8 @@ export default function RootLayout({
 
   return (
     // auth something do auth ? <></> : <></>
-    <GlobalLayout>
+    <>
       {children}
-    </GlobalLayout>
+    </>
   )
 }
